@@ -27,8 +27,8 @@ function AddToDo(todo) {
 
     li.innerHTML = `
         <span>${todo}</span>
-        <button name="check">done</button>
-        <button name="delete">delete</button>
+        <button name="check"><img src=/images/check.png></button>
+        <button name="delete"><img src=/images/trash.png></button>
     `
 
     ul.appendChild(li);
@@ -39,6 +39,6 @@ function AddToDo(todo) {
 //     if ()
 // }
 
-// function DeleteToDo(del) {
-
+// function DeleteToDo(e) {
+    
 // }

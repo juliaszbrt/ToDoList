@@ -14,33 +14,39 @@
             theme: {
                 extend: {
                     colors: {
-                        coral: '#EF684F',
-                        tangerine: '#FDA442',
+                        pink: '#FFD4D4',
+                        placeholder: '#E59B9B',
+                        grind: '#832323'
                     },
                 }
             }
         }
     </script>
 </head>
-<body class="h-screen">
-    <header>
-        <h1 class="text-center text-[30px]">What would you like to accomplish today?</h1>
-    </header>
-
+<body class="h-screen flex justify-center">
     <div>
-        <form class="flex justify-center gap-[10px]">
-            <input type="text" placeholder="Add a new task..." class="p-[5px] pl-[12px] border-2 rounded-lg">
-            <button type="submit"><img class="h-[10px]" src="/images/plus-11958.png"></button>
-        </form>
-    </div>
+        <h1 class="flex justify-center text-[60px] my-[90px] tracking-[3px] text-grind">Get Your Grind On.</h1>
+        <div>
+            <header class="mb-[30px]">
+                <h1 class="text-center text-[30px] tracking-[2px] text-grind">What would you like to accomplish today?</h1>
+            </header>
 
-    <div>
-        <div class="flex justify-center">
-            <ul>
-                <!-- <li>hello</li> -->
-            </ul>
+            <div>
+                <form class="flex justify-center gap-[20px]">
+                    <input type="text" placeholder="Add a new task..." class="p-[5px] pl-[20px] text-[20px] placeholder-placeholder rounded-lg h-[4rem] w-[20rem] bg-pink">
+                    <button type="submit"><img class="h-[20px]" src="/images/plus-11958.png"></button>
+                </form>
+            </div>
+
+            <div>
+                <div class="flex justify-center">
+                    <ul>
+                        <!-- <li>hello</li> -->
+                    </ul>
+                </div>
+                <a class="flex justify-center mt-[15px] tracking-[2px] text-[15px] text-grind">Clear All</a>
+            </div>
         </div>
-        <a class="flex justify-center">Clear All</a>
     </div>
 
     <script type="text/javascript" src="app.js"></script>
