@@ -19,26 +19,31 @@ function HandleClickDeleteOrCheck(event) {
         DeleteToDo(event);
 }
 
-
-
 function AddToDo(todo) {
     let ul = document.querySelector('ul');
     let li = document.createElement('li');
 
     li.innerHTML = `
-        <span>${todo}</span>
-        <button name="check"><img src=/images/check.png></button>
-        <button name="delete"><img src=/images/trash.png></button>
+        <span class="to-do-list">${todo}</span>
+        <button name="check"><img src=/images/check.png class="check"></button>
+        <button name="delete"><img src=/images/trash.png class="delete"></button>
     `
 
     ul.appendChild(li);
 }
 
-// function CheckToDo(e) {
-//     let item = e.target.parentNode;
-//     if ()
-// }
+function CheckToDo(e) {
+    let item = e.target.parentNode;
+    if (item.style.textDecoration == 'line-through') {
+        item.style.textDecoration = none;
+    }
 
-// function DeleteToDo(e) {
-    
-// }
+    else {
+        item.style.textDecoration = 'line-through';
+    }
+}
+
+function DeleteToDo(e) {
+    let item = e.target.parentNode;
+    item.remove();
+}

@@ -3,3 +3,24 @@ body {
     background: linear-gradient(323deg, rgba(255,207,126,1) 0%, rgba(255,139,162,1) 100%);
     background-repeat: no-repeat;
 }
+
+li {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.to-do-list {
+    flex-grow: 1;
+}
+
+.check {
+    height: 20px;
+}
+
+.delete {
+    height: 25px;
+    padding-left: 20px;
+}
