@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap" rel="stylesheet">
@@ -21,14 +22,14 @@
         }
     </script>
 </head>
-<body>
+<body class="h-screen">
     <header>
         <h1 class="text-center text-[30px]">What would you like to accomplish today?</h1>
     </header>
 
     <div>
-        <form class="flex justify-center">
-            <input type="text" placeholder="Add a new task..." class="text-center border-2 rounded-lg">
+        <form class="flex justify-center gap-[10px]">
+            <input type="text" placeholder="Add a new task..." class="p-[5px] pl-[12px] border-2 rounded-lg">
             <button type="submit"><img class="h-[10px]" src="/images/plus-11958.png"></button>
         </form>
     </div>
