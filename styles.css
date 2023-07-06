@@ -10,6 +10,8 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 17px;
+    letter-spacing: 2px;
+    color: #591212;
 }
 
 .to-do-list {
