@@ -4,6 +4,14 @@ body {
     background-repeat: no-repeat;
 }
 
+#title {
+    font-family: 'Caprasimo', cursive;
+}
+
+#clear, #input, #question, li {
+    font-family: 'Jost', sans-serif;
+}
+
 li {
     display: flex;
     align-items: center;

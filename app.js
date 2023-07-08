@@ -1,8 +1,9 @@
 document.querySelector('form').addEventListener('submit', HandleSubmitForm);
-document.querySelector('ul').addEventListener('click', HandleClickDeleteOrCheck)
+document.querySelector('ul').addEventListener('click', HandleClickDeleteOrCheck);
+document.querySelector('a').addEventListener('click', ClearAll);
 
-function HandleSubmitForm(event) {
-    event.preventDefault();
+function HandleSubmitForm(e) {
+    e.preventDefault();
 
     let input = document.querySelector('input');
     if (input.value != '') 
@@ -11,12 +12,13 @@ function HandleSubmitForm(event) {
     input.value = '' // clears added text
 }
 
-function HandleClickDeleteOrCheck(event) {
-    if (event.target.name == "check") 
-        CheckToDo(event);
+function HandleClickDeleteOrCheck(e) {
+    if (e.target.name == "check") 
+        CheckToDo(e);
 
-    if (event.target.name == "delete")
-        DeleteToDo(event);
+    if (e.target.name == "delete")
+        DeleteToDo(e);
+
 }
 
 function AddToDo(todo) {
@@ -46,4 +48,9 @@ function CheckToDo(e) {
 function DeleteToDo(e) {
     let item = e.target.parentNode;
     item.remove();
+
+}
+
+function ClearAll(e) {
+    document.querySelector('ul').innerHTML = '';
 }
