@@ -26,11 +26,6 @@ li {
     flex-grow: 1;
 }
 
-.check {
-    height: 20px;
-}
-
 .delete {
-    height: 25px;
     padding-left: 20px;
 }
