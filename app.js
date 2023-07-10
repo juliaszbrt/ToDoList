@@ -109,11 +109,6 @@ function handleOption2() {
         document.getElementById('input').style.color = '#1E0D4F';
         document.querySelector('ul').style.background = '#C2B3EA'
         document.querySelector('li').style.color = '#1E0D4F';
-        document.querySelector('form').innerHTML = `
-            <input type="text" placeholder="hello" 
-            style=""/>
-            <button type="submit"><i class="fas fa-plus" style="color: #591212;"></i></button>
-        `
     }
 }
 

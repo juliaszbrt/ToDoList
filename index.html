@@ -30,14 +30,14 @@
         }
     </script>
 </head>
-<body id="body" class="h-screen flex justify-center">
-    <div>
+<body id="body" class="h-auto flex justify-center">
+    <div class="h-screen relative">
         <h1 id="title" class="underline decoration-dashed decoration-[8px] 
-        underline-offset-[20px] flex justify-center text-[80px] mt-[90px] mb-[4rem] 
+        underline-offset-[20px] flex justify-center text-[80px] mt-[40px] mb-[4rem] 
         tracking-[4px] text-grind">Get it Done.</h1>
         <div>
             <div>
-                <form class="flex justify-center gap-[20px]">
+                <form id="form" class="flex justify-center gap-[20px]">
                     <input id="input" type="text" placeholder="Add a new task..." 
                     class="outline-none border-b-[3px] border-placeholder pl-[5px] 
                     placeholder-placeholder text-placeholder text-[17px] tracking-[3px] 
@@ -48,15 +48,15 @@
 
             <div>
                 <div class="flex justify-center">
-                    <ul class="bg-pink mt-[50px] rounded-lg px-[20px] w-[25rem]">
-                        
+                    <ul class="bg-pink mt-[30px] rounded-lg px-[20px] w-[25rem]">
+
                     </ul>
                 </div>
                 <a id="clear" class="flex justify-center mt-[15px] tracking-[2px] text-[15px] text-grind">Clear All</a>
             </div>
         </div>
-        <div>
-            <div class="flex justify-center gap-[20px] mt-[23rem] items-center">
+        <div class="absolute bottom-0 inset-x-0 p-[2.5rem]">
+            <div class="flex justify-center gap-[20px] items-center">
                 <button id="button1" class="border-grind border-[3px] bg-gradient-to-r from-option1 to-option15 h-[25px] w-[25px] rounded-[100%]"></button>
                 <button id="button2" class="border-grind border-[1.5px] bg-gradient-to-r from-option2 to-option25 h-[25px] w-[25px] rounded-[100%]"></button>
                 <button id="button3" class="border-grind border-[1.5px] bg-gradient-to-r from-option3 to-option35 h-[25px] w-[25px] rounded-[100%]"></button>
