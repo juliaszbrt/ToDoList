@@ -83,7 +83,13 @@ function handleOption1() {
         btn1.style.borderWidth = '3px';
         btn2.style.borderWidth = '1.5px';
         btn3.style.borderWidth = '1.5px';
-        body.style.backgroundColor = ''
+
+        body.style.background = 'linear-gradient(323deg, rgba(255,207,126,1) 0%, rgba(255,139,162,1) 100%)';
+        document.getElementById('title').style.color = '#591212';
+        document.getElementById('clear').style.color = '#591212';
+        document.getElementById('input').style.placeholder = '';
+        document.querySelector('ul').style.background = '#FFD4D4'
+        document.querySelector('li').style.color = '#591212';
     }
 }
 
@@ -96,6 +102,18 @@ function handleOption2() {
         btn2.style.borderWidth = '3px';
         btn1.style.borderWidth = '1.5px';
         btn3.style.borderWidth = '1.5px';
+
+        body.style.background = 'linear-gradient(323deg, rgba(133,187,212,1) 0%, rgba(103,70,209,1) 100%)';
+        document.getElementById('title').style.color = '#1E0D4F';
+        document.getElementById('clear').style.color = '#1E0D4F';
+        document.getElementById('input').style.color = '#1E0D4F';
+        document.querySelector('ul').style.background = '#C2B3EA'
+        document.querySelector('li').style.color = '#1E0D4F';
+        document.querySelector('form').innerHTML = `
+            <input type="text" placeholder="hello" 
+            style=""/>
+            <button type="submit"><i class="fas fa-plus" style="color: #591212;"></i></button>
+        `
     }
 }
 
@@ -104,8 +122,16 @@ function handleOption3() {
     const btn1 = document.getElementById('button1');
     const btn2 = document.getElementById('button2');
     const btn3 = document.getElementById('button3');
-    if (btn3.style.borderWidth != '3px')
+    if (btn3.style.borderWidth != '3px') {
         btn3.style.borderWidth = '3px';
         btn1.style.borderWidth = '1.5px';
         btn2.style.borderWidth = '1.5px';
+
+        body.style.background = 'linear-gradient(323deg, rgba(255,195,79,1) 0%, rgba(146,198,112,1) 83%, rgba(124,199,119,1) 100%)';
+        document.getElementById('title').style.color = '#274F0D';
+        document.getElementById('clear').style.color = '#274F0D';
+        document.getElementById('input').style.color = '#274F0D';
+        document.querySelector('ul').style.background = '#F4E289';
+        document.querySelector('li').style.color = '#274F0D';
+    }
 }

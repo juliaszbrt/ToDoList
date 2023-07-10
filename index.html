@@ -23,14 +23,14 @@
                         option2: '#6746d1',
                         option25: '#85bbd4',
                         option3: '#92c670',
-                        option35: '#ffc34f'
+                        option35: '#ffc34f',
                     },
                 }
             }
         }
     </script>
 </head>
-<body class="h-screen flex justify-center">
+<body id="body" class="h-screen flex justify-center">
     <div>
         <h1 id="title" class="underline decoration-dashed decoration-[8px] 
         underline-offset-[20px] flex justify-center text-[80px] mt-[90px] mb-[4rem] 
@@ -41,7 +41,7 @@
                     <input id="input" type="text" placeholder="Add a new task..." 
                     class="outline-none border-b-[3px] border-placeholder pl-[5px] 
                     placeholder-placeholder text-placeholder text-[17px] tracking-[3px] 
-                    h-[40px] w-[20rem] bg-transparent">
+                    h-[40px] w-[20rem] bg-transparent"/>
                     <button type="submit"><i class="fas fa-plus" style="color: #591212;"></i></button>
                 </form>
             </div>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div>
-            <div class="flex justify-center gap-[20px] mt-[23rem]">
+            <div class="flex justify-center gap-[20px] mt-[23rem] items-center">
                 <button id="button1" class="border-grind border-[3px] bg-gradient-to-r from-option1 to-option15 h-[25px] w-[25px] rounded-[100%]"></button>
                 <button id="button2" class="border-grind border-[1.5px] bg-gradient-to-r from-option2 to-option25 h-[25px] w-[25px] rounded-[100%]"></button>
                 <button id="button3" class="border-grind border-[1.5px] bg-gradient-to-r from-option3 to-option35 h-[25px] w-[25px] rounded-[100%]"></button>
