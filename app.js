@@ -2,6 +2,9 @@
 document.querySelector('form').addEventListener('submit', HandleSubmitForm);
 document.querySelector('ul').addEventListener('click', HandleClickDeleteOrCheck);
 document.querySelector('a').addEventListener('click', ClearAll);
+document.getElementById('button1').addEventListener('click', handleOption1);
+document.getElementById('button2').addEventListener('click', handleOption2);
+document.getElementById('button3').addEventListener('click', handleOption3);
 // document.getElementById('check').addEventListener('click', HandleCheck);
 // document.getElementById('trash').addEventListener('click', HandleDelete);
 
@@ -9,7 +12,7 @@ document.querySelector('a').addEventListener('click', ClearAll);
 function HandleSubmitForm(e) {
     e.preventDefault();
 
-    let input = document.querySelector('input');
+    let input = document.getElementById('input');
     if (input.value != '') 
         AddToDo(input.value);
 
@@ -69,4 +72,40 @@ function DeleteToDo(e) {
 
 function ClearAll() {
     document.querySelector('ul').innerHTML = '';
+}
+
+function handleOption1() {
+    const body = document.querySelector('body');
+    const btn1 = document.getElementById('button1');
+    const btn2 = document.getElementById('button2');
+    const btn3 = document.getElementById('button3');
+    if (btn1.style.borderWidth != '3px') {
+        btn1.style.borderWidth = '3px';
+        btn2.style.borderWidth = '1.5px';
+        btn3.style.borderWidth = '1.5px';
+        body.style.backgroundColor = ''
+    }
+}
+
+function handleOption2() {
+    const body = document.querySelector('body');
+    const btn1 = document.getElementById('button1');
+    const btn2 = document.getElementById('button2');
+    const btn3 = document.getElementById('button3');
+    if (btn2.style.borderWidth != '3px') {
+        btn2.style.borderWidth = '3px';
+        btn1.style.borderWidth = '1.5px';
+        btn3.style.borderWidth = '1.5px';
+    }
+}
+
+function handleOption3() {
+    const body = document.querySelector('body');
+    const btn1 = document.getElementById('button1');
+    const btn2 = document.getElementById('button2');
+    const btn3 = document.getElementById('button3');
+    if (btn3.style.borderWidth != '3px')
+        btn3.style.borderWidth = '3px';
+        btn1.style.borderWidth = '1.5px';
+        btn2.style.borderWidth = '1.5px';
 }
