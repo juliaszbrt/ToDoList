@@ -15,18 +15,10 @@ function HandleSubmitForm(e) {
     let input = document.getElementById('input');
     if (input.value != '') 
         AddToDo(input.value);
+        document.getElementById('clear').style.visibility = 'visible';
 
     input.value = '' // clears added text
 }
-
-// function HandleCheck {
-    
-// }
-
-// function HandleDelete() {
-//     let trash = document.getElementById('trash');
-//     trash.parentNode.remove();
-// }
 
 
 function HandleClickDeleteOrCheck(e) {
@@ -37,7 +29,6 @@ function HandleClickDeleteOrCheck(e) {
         DeleteToDo(e);
 
 }
-
 
 // Helpers
 function AddToDo(todo) {
@@ -72,6 +63,7 @@ function DeleteToDo(e) {
 
 function ClearAll() {
     document.querySelector('ul').innerHTML = '';
+    document.getElementById('clear').style.visibility = 'hidden';
 }
 
 function handleOption1() {
@@ -107,8 +99,10 @@ function handleOption2() {
         document.getElementById('title').style.color = '#1E0D4F';
         document.getElementById('clear').style.color = '#1E0D4F';
         document.getElementById('input').style.color = '#1E0D4F';
-        document.querySelector('ul').style.background = '#C2B3EA'
+        document.querySelector('ul').style.background = '#C2B3EA';
         document.querySelector('li').style.color = '#1E0D4F';
+
+        changePlaceholderColor();
     }
 }
 
@@ -130,3 +124,7 @@ function handleOption3() {
         document.querySelector('li').style.color = '#274F0D';
     }
 }
+
+// function changePlaceholderColor() {
+//     document.getElementsByName('input')[0].placeholder = 'hello';
+// }
